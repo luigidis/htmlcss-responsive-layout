@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+header {
+    background-color: #0084FD;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.row {
+    display: flex;
+    
+}
+
+.button {
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    line-height: 2.5rem;
+    padding: 0 15px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Css Navbar */
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    padding: 15px 0;
+}
+    
+.navbar-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    line-height: 2.5rem;
+    color: white;
+}
+
+.navbar-smart {
+    display: none;
+    line-height: 2.5rem;
+    color: white;
+}
+
+@media (max-width: 810px) {
+    .navbar-list {
+        display: none;
+    }
+
+    .navbar-smart {
+        display: block;
+    }
+}
+
+/* Css First Section*/
+
+.col-3 {
+    flex-basis: calc((100% / 3) * 2);
+}
+
+.col-1 {
+    flex-basis: calc((100% / 3) * 1);
+}
+
+.row-gap-1 {
+    column-gap: 25px;
+    row-gap: 30px;
+}
+
+.col-color {
+    background-color: #B5DDFF;
+    border-radius: 5%;
+}
+
+.col-stats {
+    padding-left: 25px;
+    padding-right: 60px;
+}
+
+.col-3 img {
+    padding-top: 50px;
+}
+
+.col-3 div h2 {
+    padding: 32px 0;
+    color: #0084FD;
+    
+}
+
+.col-3 div p {
+    padding-bottom: 32px;
+    color: #5A6E7F;
+    font-weight: bold;
+}
+
+.col-3 div .button {
+    color: white ;
+    background-color: #0084FD;
+    padding: 10px 40px;
+    font-weight: bold;
+} 
