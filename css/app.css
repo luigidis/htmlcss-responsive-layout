@@ -22,6 +22,10 @@ header {
     padding: 0 30px;
 }
 
+.container-small {
+    max-width: 880px;
+    margin: 0 auto;
+}
 .row {
     display: flex;
     
@@ -77,6 +81,11 @@ a {
 }
 
 /* Css First Section*/
+
+.section-1 .container {
+    margin-top: 40px;
+    margin-bottom: 100px;       
+}
 
 .col-3 {
     flex-basis: calc(((100% - 20px) / 3) * 2);
@@ -144,6 +153,7 @@ a {
 
 .col-1, .col-2 {
     text-align: center;
+    padding: 0 25px;
 }
 
 .col-1 div i, .col-2 i {
@@ -175,24 +185,29 @@ a {
         flex-basis: 100%;
     }
 
+    .col-1, .col-2 {
+        text-align: center;
+        padding: 0 15px;
+    }
+
     .col-stats {
         flex-wrap: wrap;
         padding-right: 20px;
     }
 
     .basis-50 img {
-        /* padding-right: 200px; */
-        /* width: 70%; */
         padding-top: 10px;
         padding-left: 15px;
     }
-
 }
+    
 
-@media (max-width: 375px) {
-    .section-1 .container {
-        margin-top: 40px;
+
+@media (max-width: 560px) {
+    header .container .navbar {
+        flex-direction: row;
     }
+
     .row {
         flex-direction: column;
     }
@@ -208,5 +223,102 @@ a {
     }
 }
 
+/* Seconda Sezione */
 
-        
+.section-2 {
+    background-color: #9792E4;
+    padding-top: 100px;
+    padding-bottom: 55px;
+}
+
+.section-2 .container-small .row {
+    column-gap: 50px;
+}
+
+.col-4 {
+    flex-basis: 50%;
+}
+
+.box-1 {
+    color: white;
+}
+    
+.box-1 h3 {
+    font-size: 2rem;
+    padding-bottom: 40px;
+}
+    
+.box-1 img {
+    padding-bottom: 100px;
+}
+
+.box-1 p {
+    line-height: 30px;
+}
+
+.box-2 {
+    margin-top: 185px;
+    padding-top: 30px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+    
+.box-2 img {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.box-2 h3 {
+    font-size: 1.375rem;
+}
+
+.box-2 p {
+    padding: 20px 30px;
+    font-style: italic;
+}
+
+.box-2 i {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    background-color:  #9792E4;
+    border-radius: 100%;
+    padding: 0 15px;
+    line-height: 50px;
+}
+
+@media (max-width: 810px) {
+    .container-small {
+        padding: 0 30px;
+    }
+
+    .section-2 .container-small .row {
+        flex-direction: column;
+    }
+
+    /* .box-1 img {
+        padding: 0 20px;
+    } */
+
+    .box-1 h3 {
+        font-size: 4rem;
+    }
+
+    .box-2 {
+        margin-top: 25px;
+    }
+
+    .box-2 i {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 560px) {
+    .box-1 h3 {
+        font-size: 1.938rem;
+    }
+
+    .box-1 img {
+        padding-bottom: 65px;
+    }
+}
